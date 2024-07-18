@@ -1,0 +1,11 @@
+/* BooksBanner.module.css */
+
+.bannerImage {
+    width: 100%; /* Adjust the width as needed */
+    max-height: 300px; /* Set a maximum height to control size */
+    object-fit: cover; /* Ensure the image covers the container */
+    object-position: center; /* Center the image within the container */
+  }
+  .books{
+    text-align: center;
+  }

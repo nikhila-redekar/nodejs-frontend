@@ -1,0 +1,38 @@
+/* src/components/BannerSection.css */
+.bannercontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 4px;
+  }
+  
+  .bannerimage {
+    flex: 0 0 auto; /* Do not grow, do not shrink, maintain its initial size */
+    max-width: 40%; /* Adjust the maximum width of the image */
+  }
+  
+  .bannerimage img {
+    width: 100%; /* Make the image width 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default inline spacing */
+  }
+  
+  .bannertext {
+    flex: 1; /* Take up remaining space */
+    padding: 0 20px;
+  }
+  
+  .bannertext h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family:'Pacifico', cursive;
+
+  }
+  
+  .banner-text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  

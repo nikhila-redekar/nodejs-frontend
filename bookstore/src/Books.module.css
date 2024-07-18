@@ -1,0 +1,170 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .formContainer {
+    width: 30%; /* Set form container to 30% width */
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+  }
+  
+  .listContainer {
+    width: 70%; /* Set list container to 70% width */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+  }
+  
+  .bookTitle {
+    cursor: pointer;
+    color: #007bff;
+    margin-right: 10px;
+  }
+  
+  .bookDetails {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  button[type="button"] {
+    background-color: #dc3545;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #bd2130;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .formContainer,
+    .listContainer {
+      width: 100%; /* Full width on smaller screens */
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .booksTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .booksTable th,
+  .booksTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .booksTable th {
+    background-color: #f2f2f2;
+  }
+  
+  .booksTable tbody tr:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .bookTitle {
+    cursor: pointer;
+    color: #007bff; /* Blue color for clickable links */
+text-align: center;  }
+
+  .booksTable button {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .edit {
+    background-color: green;
+  }
+  
+  .delete {
+    background-color: #dc3545;
+  }
+  
+  /* Additional styles for book images */
+  .bookImage {
+    max-width: 100px; /* Set maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+    margin-right: 20px;
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modalContent {
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    max-width: 800px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .modalImage {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+  }  

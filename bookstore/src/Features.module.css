@@ -1,0 +1,63 @@
+/* src/Features.css */
+.row {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 5px solid #ddd;
+    margin-bottom: 20px;
+    height: 100%;
+  }
+  
+
+  .h2, h3{
+    text-align: center;
+    font-family:'Pacifico', cursive;
+
+  }
+  .container{
+    padding-bottom: 20px;
+  }
+
+  .featureboxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .featurebox {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-right: 20px; /* Adjust spacing between boxes */
+    background-color: rgb(241, 94, 41);
+
+  }
+  
+  .featurebox:last-child {
+    margin-right: 0; /* Remove margin from last box to avoid extra space */
+  }
+  
+  .featurebox h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .featurebox p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  

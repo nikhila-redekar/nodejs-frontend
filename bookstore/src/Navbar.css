@@ -1,0 +1,47 @@
+/* src/components/NavBar.css */
+.navbar {
+    background-color: pink;
+    padding: 10px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   padding-left: 20px;   /* Adds padding of 20 pixels on the left side */
+  padding-right: 20px;  /* Adds padding of 20 pixels on the right side */
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .nav-links li a:hover {
+    text-decoration: underline;
+  }
+/* src/Footer.css */
+/*footer {
+    background-color: pink;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+  }*/

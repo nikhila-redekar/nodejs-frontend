@@ -1,0 +1,176 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    background-image: url('../public/author-page.avif');
+    background-size: cover;
+  }
+  
+  .formContainer {
+    width: 30%; /* Set form container to 30% width */
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: black;
+  }
+  
+  .listContainer {
+    width: 70%; /* Set list container to 70% width */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    overflow-y: auto; /* Enable vertical scroll for overflowing content */
+    max-height: calc(100vh - 160px); /* Adjust max-height to fit your layout */
+  }
+  
+  .authorList {
+    max-height: calc(100vh - 240px); /* Adjust max-height to fit your layout */
+    overflow-y: auto; /* Enable vertical scroll for overflowing content */
+  }
+  
+  .authorName {
+    cursor: pointer;
+    color: #007bff;
+    margin-right: 10px;
+  }
+  
+  .authorDetails {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .authbutton {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: orangered;
+    color: white;
+    border: solid black;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    color: black;
+  }
+  
+  button[type="button"] {
+    background-color: #dc3545;
+    color: black;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #bd2130;
+  }
+  
+  /* Table styles */
+  .authorsTable {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc; /* Added border to the table */
+  }
+  
+  .authorsTable th,
+  .authorsTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .authorsTable th {
+    background-color: #f2f2f2;
+  }
+  
+  .authorsTable tbody tr:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .authbuttonedit {
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: green;
+  }
+  
+  .authbuttondelete {
+    background-color: #bd2130;
+  }
+  
+  .scrollNote {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+  }
+  
+  /* Adjusting layout to 30% and 70% */
+  @media (max-width: 767px) {
+    .container {
+      flex-direction: column;
+    }
+    
+    .formContainer,
+    .listContainer {
+      width: 100%;
+    }
+  }
+  /* Modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure modal is above other content */
+  }
+  
+  .modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
